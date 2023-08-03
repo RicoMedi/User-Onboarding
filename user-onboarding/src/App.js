@@ -33,6 +33,7 @@ function App() {
       setUsers([ res.data, ...users ])
    })
    .catch(err => console.error(err))
+   .finally(() => setFormValues(initialFormValues))
   }
 const validate = (name, value) =>{
   yup.reach(schema, name)
