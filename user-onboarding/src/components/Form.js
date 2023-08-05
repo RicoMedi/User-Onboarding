@@ -41,7 +41,7 @@ const onSubmit = (event)=> {
             <label>
                 Email: &nbsp;
                 <input
-                type="text"
+                type="email"
                 name="email"
                 value={email}
                 onChange={onChange}
